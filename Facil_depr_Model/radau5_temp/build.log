@@ -1,0 +1,91 @@
+running build_ext
+running build_src
+build_src
+building py_modules sources
+building library "radau5" sources
+building library "lapack_lite" sources
+building extension "/Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp._radau5_Sibille_model_vf" sources
+swig: /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/radau5_Sibille_model_vf.i
+swig -python -I/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy-1.9.2-py2.7-macosx-10.6-intel.egg/numpy/core/include -I/Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model -I/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator -o /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/radau5_Sibille_model_vf_wrap.c -outdir /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/radau5_Sibille_model_vf.i
+build_src: building npy-pkg config files
+customize UnixCCompiler
+customize UnixCCompiler using build_clib
+customize Gnu95FCompiler
+Found executable /usr/local/bin/gfortran
+customize Gnu95FCompiler
+customize Gnu95FCompiler using build_clib
+building 'radau5' library
+compiling Fortran sources
+Fortran f77 compiler: /usr/local/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -arch x86_64 -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /usr/local/bin/gfortran -Wall -g -fno-second-underscore -arch x86_64 -fPIC -O3 -funroll-loops
+Fortran fix compiler: /usr/local/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -arch x86_64 -fPIC -O3 -funroll-loops
+creating build
+creating build/temp.macosx-10.6-intel-2.7
+creating build/temp.macosx-10.6-intel-2.7/Library
+creating build/temp.macosx-10.6-intel-2.7/Library/Frameworks
+creating build/temp.macosx-10.6-intel-2.7/Library/Frameworks/Python.framework
+creating build/temp.macosx-10.6-intel-2.7/Library/Frameworks/Python.framework/Versions
+creating build/temp.macosx-10.6-intel-2.7/Library/Frameworks/Python.framework/Versions/2.7
+creating build/temp.macosx-10.6-intel-2.7/Library/Frameworks/Python.framework/Versions/2.7/lib
+creating build/temp.macosx-10.6-intel-2.7/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7
+creating build/temp.macosx-10.6-intel-2.7/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
+creating build/temp.macosx-10.6-intel-2.7/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg
+creating build/temp.macosx-10.6-intel-2.7/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool
+creating build/temp.macosx-10.6-intel-2.7/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator
+compile options: '-I/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy-1.9.2-py2.7-macosx-10.6-intel.egg/numpy/core/include -c'
+extra f77 options: '-w'
+gfortran:f77: /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/radau5.f
+ar: adding 1 object files to build/temp.macosx-10.6-intel-2.7/libradau5.a
+ranlib:@ build/temp.macosx-10.6-intel-2.7/libradau5.a
+building 'lapack_lite' library
+compiling Fortran sources
+Fortran f77 compiler: /usr/local/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -arch x86_64 -fPIC -O3 -funroll-loops
+Fortran f90 compiler: /usr/local/bin/gfortran -Wall -g -fno-second-underscore -arch x86_64 -fPIC -O3 -funroll-loops
+Fortran fix compiler: /usr/local/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -arch x86_64 -fPIC -O3 -funroll-loops
+compile options: '-I/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy-1.9.2-py2.7-macosx-10.6-intel.egg/numpy/core/include -c'
+extra f77 options: '-w'
+gfortran:f77: /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/lapackc.f
+extra f77 options: '-w'
+gfortran:f77: /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/lapack.f
+extra f77 options: '-w'
+gfortran:f77: /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/dc_lapack.f
+ar: adding 3 object files to build/temp.macosx-10.6-intel-2.7/liblapack_lite.a
+ranlib:@ build/temp.macosx-10.6-intel-2.7/liblapack_lite.a
+customize UnixCCompiler
+customize UnixCCompiler using build_ext
+customize Gnu95FCompiler
+customize Gnu95FCompiler
+customize Gnu95FCompiler using build_ext
+building '/Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp._radau5_Sibille_model_vf' extension
+compiling C sources
+C compiler: /usr/bin/clang -fno-strict-aliasing -fno-common -dynamic -arch i386 -arch x86_64 -g -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes
+
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Users
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Users/alexandre
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Users/alexandre/Desktop
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Users/alexandre/Desktop/INRIA
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Users/alexandre/Desktop/INRIA/Projet_Habenula
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7/lib
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool
+creating /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator
+compile options: '-I/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy-1.9.2-py2.7-macosx-10.6-intel.egg/numpy/core/include -I/Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model -I/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator -I/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy-1.9.2-py2.7-macosx-10.6-intel.egg/numpy/core/include -I/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 -c'
+extra options: '-w -Wno-return-type -Wall -D__RADAU__'
+clang: /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/memory.c
+clang: /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Sibille_model_vf.c
+clang: /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/interface.c
+clang: /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/eventFinding.c
+clang: /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/integration.c
+clang: /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/radau5_Sibille_model_vf_wrap.c
+clang: /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/radau5mod.c
+/usr/local/bin/gfortran -Wall -g -arch x86_64 -Wall -g -undefined dynamic_lookup -bundle /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Sibille_model_vf.o /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/radau5mod.o /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/integration.o /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/interface.o /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/eventFinding.o /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyDSTool-0.90.0-py2.7.egg/PyDSTool/integrator/memory.o /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/radau5_Sibille_model_vf_wrap.o -L/usr/local/gfortran/lib/gcc/x86_64-apple-darwin13/4.9.0 -Lbuild/temp.macosx-10.6-intel-2.7 -lradau5 -llapack_lite -lgfortran -o /Users/alexandre/Desktop/INRIA/Projet_Habenula/Model_Kir4_1/Facil_depr_Model/radau5_temp/_radau5_Sibille_model_vf.so -w
