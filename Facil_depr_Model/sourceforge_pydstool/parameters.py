@@ -10,7 +10,8 @@ import numpy as np
 import cPickle as pickle
 from copy import deepcopy
 import random
-
+import string
+import re
 import pandas as pd
 
 import scipy.stats
@@ -19,13 +20,45 @@ import matplotlib.pyplot as plt
 
 import PyDSTool as dst
 
-# General functions #
-import sys
-sys.path.append('/Users/alexandre/Desktop/INRIA/Prog/Python/')
+# Return dictionary | Function to convert string formulas with power #
+def convert_equation_string_power(dictionary):
 
-from utils.DSTools import convert_equation_string_power, convert_function_string_power
-from utils import replace_words_in_string
+    for key, value in dictionary.iteritems():
+        dictionary[key] = dst.convertPowers(value)
+    return dictionary
 
+# Return dictionary | Function to convert string formulas with power #
+def convert_function_string_power(dictionary):
+
+    for key, value in dictionary.iteritems():
+        dictionary[key] = (value[0],dst.convertPowers(value[1]))
+    return dictionary
+
+
+# Return string with replaced terms | Recurrence function #
+def replace_words_in_string(string_to_change, list_term_to_replace, replacing_term_dict):
+
+    words_dict = {} # Initialisation
+    for word in re.finditer(r"\w+", string_to_change): # For each term of the equation
+        words_dict[word.group(0)] = (word.start(), word.end()) # Save position in a dictionary
+
+    carac_list = re.findall(r".", string_to_change) # List of caracters of the equation
+
+    for term_to_replace in list_term_to_replace: # For each term to replace
+        if term_to_replace in words_dict.keys(): # If there is a term to replace
+
+            for j in xrange(words_dict[term_to_replace][1] -words_dict[term_to_replace][0]): # For each caracter of the term to replace
+                carac_list.pop(words_dict[term_to_replace][0]) # Remove caracter
+
+            carac_list.insert(words_dict[term_to_replace][0], replacing_term_dict[term_to_replace]) # Insert new term
+
+            carac_list = "".join(carac_list) # From list of caracter to string chain
+
+            return replace_words_in_string(carac_list, list_term_to_replace, replacing_term_dict) # Recurrence
+
+    carac_list = "".join(carac_list) # From list of caracter to string chain
+
+    return carac_list
 
 # -------------------------------------------------------------------- #
 # ------------------------- Simulation parameters --------------------------- #
@@ -99,7 +132,7 @@ init_dict.update(init_dict_ord_facil_depr_model)
 
 # Ordered dictionary #
 params_dict_ord_facil_depr_model = coll.OrderedDict([
-    ('tau_input', 10.1001), # ms | Input time constant
+    ('tau_input', 0.1), # ms | Input time constant
     ('ampl_stim', 1.0), # Amplitude Dirac stimulation
 
     ('tau_rec', 300.0), # ms | Recovery time constant
